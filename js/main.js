@@ -124,7 +124,7 @@ let stats = new Stats();
 document.body.appendChild(stats.dom);
 
 const bindPage = async () => {
-	const net = await posenet.load(0.75);
+	const net = await posenet.load({'multiplier': 0.75});
 	const video = await loadVideo();
 	/*
 	let video = document.getElementById("video");
