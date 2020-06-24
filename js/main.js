@@ -45,7 +45,7 @@ let dst = {};
 const loadModel = async () => {
 	let vrmLoader = new THREE.VRMLoader();
 	let result = await new Promise(resolve => {
-		vrmLoader.load("assets/VRoid.vrm", (vrm) => {
+		vrmLoader.load("assets/DarkCloudVA1.vrm", (vrm) => {
 			vrm.scene.position.set(posX, posY, posZ);
 			vrm.scene.scale.set(scale, scale, scale);
 			vrm.scene.rotation.set(0.0, Math.PI, 0.0);
